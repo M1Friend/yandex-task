@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Task</title>
+        <script src="index.js"></script>
+        <style>
+            form, input, div, button {
+                margin-top: 6px;
+            }
+            #resultContainer{
+                height: 50px;
+            }
+            .error {
+                border: 1px solid red;
+            }
+            .success {
+                border: 1px solid green;
+            }
+            .progress {
+                border: 1px solid yellow;
+            }
+        </style>
+    </head>
+    <body>
+       <form id="myForm" method="post" action="progress.json">
+           <input type="text" name="fio" placeholder="Введите ФИО" required><br>
+           <input type="text" name="email" placeholder="Введите E-mail" required><br>
+           <input id="phone" type="text" name="phone" placeholder="Введите телефон" required><br>
+           <button id="submitButton" type="submit">Отправить</button><br>
+       </form>
+       <div id="resultContainer"></div>
+    </body>
+</html>
